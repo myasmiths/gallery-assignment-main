@@ -1,4 +1,4 @@
-colors
+/* Root Variables */
 :root {
     --primary-color: #333;
     --secondary-color: #555;
@@ -7,7 +7,7 @@ colors
     --font-secondary: 'Open Sans', sans-serif;
   }
   
-  styles
+  /* Global Styles */
   body {
     font-family: var(--font-primary);
     margin: 0;
@@ -19,7 +19,7 @@ colors
     font-family: var(--font-secondary);
   }
   
-  navigation bar
+  /* Navigation Bar */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,6 +28,7 @@ colors
     background-color: var(--primary-color);
     color: white;
   }
+  
   .nav-links {
     display: flex;
     gap: 1rem;
@@ -74,7 +75,7 @@ colors
     }
   }
   
-  hero section
+  /* Hero Section */
   .hero {
     position: relative;
     height: 60vh;
@@ -125,7 +126,7 @@ colors
     background: var(--accent-color);
   }
   
-  gallery section
+  /* Gallery Section */
   .gallery {
     padding: 2rem;
   }
@@ -181,10 +182,11 @@ colors
     }
   }
   
-  footer style
+  /* Footer */
   .footer {
     text-align: center;
     padding: 1rem;
     background: var(--primary-color);
     color: white;
   }
+  
