@@ -1,0 +1,30 @@
+colors
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #4CAF50;
+    --font-primary: Georgia, serif;
+    --font-secondary: 'Open Sans', sans-serif;
+  }
+  
+  styles
+  body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-secondary);
+  }
+  
+  navigation bar
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+  }
