@@ -19,14 +19,13 @@
     font-family: var(--font-secondary);
   }
   
-  /* Navigation Bar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    color: white;
+/* Navigation Bar */
+.navbar {
+    position: relative; /* Ensure navbar stays above hero */
+    z-index: 10; /* Keeps navbar above hero */
+    margin: 0; /* Remove any extra spacing */
+    padding: 1rem 2rem; /* Retain padding for internal spacing */
+    background-color: #333; /* Ensure it's visible over the hero background */
   }
   
   .nav-links {
@@ -75,8 +74,8 @@
     }
   }
   
-  /* Hero Section */
-  .hero {
+/* Hero Section */
+.hero {
     position: relative;
     height: 60vh;
     background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
@@ -85,12 +84,18 @@
     align-items: center;
     color: white;
     text-align: center;
+    width: 100%; /* Ensure it spans the full width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    top: 0; /* Ensure it aligns with the top of the page */
   }
   
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0; /* Remove rounded corners */
+    width: 100%; /* Make the overlay span the full width */
+    text-align: center;
   }
   
   .hero-controls {
