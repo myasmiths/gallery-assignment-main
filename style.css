@@ -1,7 +1,7 @@
 /* Root Variables */
 :root {
-    --primary-color: #333;
-    --secondary-color: #555;
+    --primary-color: #20160c;
+    --secondary-color: #6bbe2670;
     --accent-color: #4CAF50;
     --font-primary: Georgia, serif;
     --font-secondary: 'Open Sans', sans-serif;
@@ -21,58 +21,83 @@
   
 /* Navigation Bar */
 .navbar {
-    position: relative; /* Ensure navbar stays above hero */
-    z-index: 10; /* Keeps navbar above hero */
-    margin: 0; /* Remove any extra spacing */
-    padding: 1rem 2rem; /* Retain padding for internal spacing */
-    background-color: #61a52a; /* Ensure it's visible over the hero background */
-  }
-  
-  .nav-links {
+    position: relative;
+    z-index: 10;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+.logo {
+    display: flex; /* Flex layout for logo and text */
+    align-items: center; /* Center logo image and text vertically */
+    gap: 0.5rem; /* Add spacing between logo image and text */
+}
+
+.logo img {
+    height: 40px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.logo span {
+    color: white; /* Text color for logo */
+    font-weight: 600;
+    font-size: 1.2rem; /* Adjust font size */
+}
+
+.nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem; /* Add spacing between nav items */
     list-style: none;
-  }
-  
-  .nav-links li a {
+}
+
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-  }
-  
-  .hamburger {
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--accent-color); /* Highlight on hover */
+}
+
+.hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .hamburger span {
+}
+
+.hamburger span {
     background: white;
     height: 3px;
     width: 25px;
     margin: 3px 0;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
     .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 50px;
-      right: 20px;
-      background: var(--secondary-color);
-      padding: 1rem;
-      border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: var(--secondary-color);
+        padding: 1rem;
+        border-radius: 5px;
     }
-  
+
     .nav-links.active {
-      display: flex;
+        display: flex;
     }
-  
+
     .hamburger {
-      display: flex;
+        display: flex;
     }
-  }
+}
   
 /* Hero Section */
 .hero {
