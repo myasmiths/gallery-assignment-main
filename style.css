@@ -25,7 +25,7 @@
     z-index: 10; /* Keeps navbar above hero */
     margin: 0; /* Remove any extra spacing */
     padding: 1rem 2rem; /* Retain padding for internal spacing */
-    background-color: #333; /* Ensure it's visible over the hero background */
+    background-color: #61a52a; /* Ensure it's visible over the hero background */
   }
   
   .nav-links {
@@ -78,7 +78,7 @@
 .hero {
     position: relative;
     height: 80vh; /* Reduced height for better fit */
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background: url('skyline.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
